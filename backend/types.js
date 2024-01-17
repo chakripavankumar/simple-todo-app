@@ -1,15 +1,15 @@
- const Zod = require('zod');
+ const zod = require('zod');
 
-  const createTodo= Zod.object({
-    tittle:Zod.string(),
-     description :Zod.string(),
+  const createTodo= zod.object({
+    tittle:zod.string(),
+     description :zod.string(),
   })
 
-   const updateTodo = Zod.object({
-    id:Zod.string(),
+   const updateTodo = zod.object({
+    id:zod.string(),
    });
 
     module.exports={
-        createTodo,
-        updateTodo
+        createTodo: createTodo,
+       updateTodo: updateTodo,
     }
